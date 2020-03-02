@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Custumcss.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+
+    <meta charset="utf-8">
+
+    <script src="JS/qrcode.min.js">
+    </script>
+
+
+
+
+</head>
+<body>
+    <img class="img-fluid fixed-top"  src="../Ress/Hero.png" >
+    <img class="img-fluid "  src="../Ress/Hero.png" >
+    
+
+    <div class="card bg-light mb-3" style="max-width: 100%;">
+      <div class="card-header" style="text-align: center; font-size: xx-large;"> Wallet</div>
+      <div class="card-body">
+      
+        <!-- QR CODE -->
+        <div id="output" class="text-center"></div>
+    </main>    
+    <script>
+        let qrcode = new QRCode("output", {
+            text: "karboncoin.shop",
+            width: 120,
+            height: 120,
+            colorDark : "#000000",
+            colorLight : "#1C00ff00",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+
+
+        <h4 class="card-title text-center">5000 </h4>
+        <h5 class="card-title text-center" style="line-height: 0;" >Karbon Coin </h5>
+        
+        <hr/>
+        <p class="card-text text-center font-italic">You saved 51.85 kgCO<sub>2</sub> this year.</p>
+
+      </div>
+    </div>
+
+
+    <div class="btn-group mr-2 btn-group-lg w-100"  role="group" aria-label="Second group" >
+      <button type="button" class="btn btn-secondary" style="background-color:#4db484; border-color:#1e9c6e ;">Send Karbon</button>
+      <button type="button" class="btn btn-secondary" style="background-color:#4db484; border-color:#1e9c6e ;">Receive Karbon</button>
+    </div>
+
+    
+
+
+<hr>
+
+
+<a href="https://karboncoin.shop"> <img src="Ress/App to be used.png" class="img-fluid"> </a>
+
+<button> </button>
+
+    
+
+
+
+    <!-- DO NOT REMOVE DOES 
+    <br><br><br>-->
+    
+<!-- 
+    Copy
+    <div class="btn-group fixed-bottom navheight bg-light border-0" height="1em" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary bg-transparent">
+          <img class="navimgheight" src="Ress/NavBarDown/home-hot.png"> <br> <span class="navtitle text-dark"> Home </span>
+      </button>
+      <button type="button" class="btn btn-secondary bg-transparent">
+          <img class="navimgheight" src="Ress/NavBarDown/shop-cold.png"> <br> <span class="navtitle text-dark"> Shop </span>
+      </button>
+      <button type="button" class="btn btn-secondary bg-transparent">
+          <img class="navimgheight" src="Ress/NavBarDown/profile-cold.png"> <br> <span class="navtitle text-dark"> Account </span></button>
+    </div>
+    -->    
+</body>
