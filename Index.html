@@ -5,12 +5,32 @@
     <link rel="stylesheet" href="./css/Custumcss.css">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
 
+    <style type="text/css">
+      .mobileShow {display: none;}
+    
+      /* Smartphone Portrait and Landscape */
+      @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){ 
+          .mobileShow {display: inline;}
+      }
+      .mobileHide { display: inline; }
+
+/* Smartphone Portrait and Landscape */
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){
+   .mobileHide { display: none;}
+}
+
+    </style>
 
     <meta charset="utf-8">
 
 </head>
 
-<body>
+<body >
+  <div class="mobileShow"> 
     <img src="https://pngimage.net/wp-content/uploads/2018/05/beta-png-5.png" style="position:fixed;  top: 0px;right: -1px;width: 100px; z-index: 230000;">   
 
     <img class="img-fluid fixed-top"  src="./Ress/Hero.png" >
@@ -29,7 +49,25 @@
         <br>
         <br>
         <button class="btn btn-dark" > Generate a wallet</button>
+
+        <a href="./Page pricipale/Main View.html"> <button> skip for now</button></a>
     </center>
+
+  </div>
+    
+
+  <div class="mobileHide">
+    <center>
+      <img src="Ress/Karbon-Coin-Logo-black copy.png" style="width:20em;">
+      <h1> Please Open On Your Phone </h1>
+      <h4> For Any help contact us +961 70 589 323</h4>
+
+    </center>
+    
+  </div>
+  
+
+
 
 
 </body>
