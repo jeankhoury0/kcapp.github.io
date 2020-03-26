@@ -1,0 +1,18 @@
+{
+  "short_name": "KC Wallet",
+  "name": "Karbon Coin Wallet?",
+  "description": "Wallet for Karbon Coin",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "backround_color": "#000000",
+  "theme_color" : "#FFE0C4",
+  "orientation" : "portrait-primary",
+  "icons": [
+    {
+      "source":"/Ress/Karbon-Coin-Logo-black.png",
+      "type": "image/png",
+      "sizes": "1189x1189"
+    }
+  ]
+
+}
