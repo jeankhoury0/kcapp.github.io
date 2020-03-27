@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/Custumcss.css" />
+  <link rel="stylesheet" href="./receive.css" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+  <meta charset="utf-8" />
+
+  <script src="https://cdn.jsdelivr.net/npm/dynamsoft-javascript-barcode@7.3.0-v2/dist/dbr.js" data-productKeys="PRODUCT-KEYS"></script>
+
+
+  <script>
+    function scanQRcode{
+      let scanner = null;
+    (async()=>{
+        scanner = await Dynamsoft.BarcodeScanner.createInstance();
+        scanner.onFrameRead = results => {console.log(results);};
+        scanner.onUnduplicatedRead = (txt, result) => {alert(txt);};
+        await scanner.show();
+    })();
+    }
+
+</script>
+</head>
+
+<body>
+    <img class="img-fluid "  src="../Ress/Hero.png" >
+    <center>
+        <h1> Receive Karbon Coin</h1>
+
+          
+        <input type="button" class="btn btn-success" value="Scan" onclick="scanQRcode()" />
+
+
+        <br>
+        <br>
+
+        <h5>Please do not share your wallet with someone you meet online</h5>
+
+    </center>
+
+
+
+</body>
